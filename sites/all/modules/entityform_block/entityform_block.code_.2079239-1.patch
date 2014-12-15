@@ -1,0 +1,14 @@
+diff --git a/entityform_block.module b/entityform_block.module
+index fa6af2b..5fe6a5a 100644
+--- a/entityform_block.module
++++ b/entityform_block.module
+@@ -103,7 +103,7 @@ function entityform_block_submit(&$form, &$form_state) {
+       }
+     }
+   }
+-  if ($form_state['values']['data']['enable_block'] == 1) {
++  if ($form_state['values']['data']['block_set']['enable_block'] == 1) {
+     $enabled = TRUE;
+   }
+   if (isset($enabled)) {
+

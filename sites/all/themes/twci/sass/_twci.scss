@@ -1,0 +1,263 @@
+/* 
+TWCI custom styling
+*/
+#header {
+    // dark gray, 100%,  set/max height, fonts, font size, color, 
+    width:100%; margin: 0 auto; padding: 10px 0 0 0;
+    background-color: $darkgray; min-height:137px;
+    font-family: $brandongrotesque; font-size: 1.3125rem; color: $lightgray;
+    box-sizing: border-box;
+    a {
+        color: $lightgray;
+    }
+    .inner {
+        max-width:1400px; margin:0 auto; position: relative;
+    }
+    .block-menu-block {
+        // position, color, size
+        a {
+            text-decoration: none;
+        }
+
+    }
+    #logo {
+        height: 80px;
+        float: left;
+        img { height: 100%; }
+    }
+    #block-block-2 {
+        float: right; margin: 40px 0 0 0;
+    }
+}
+#main {
+    max-width:1400px; margin: 0 auto;
+    .field-name-field-background-image {
+        position: absolute; top: 0; right: 0;
+        text-align: right;
+        img { width: 50%; }
+    }
+    // schedule consultation form
+    #block-entityform-block-schedule-consultation {
+        background-color: #b2b3b5; 
+        form { 
+            padding-bottom: 10px;
+        }
+        .block__title {
+            position: absolute;  right: 0;
+            transform: rotate(-90deg); transform-origin: 100% 100%;
+            -webkit-transform: rotate(-90deg); -webkit-transform-origin: 100% 100%;
+            background-color: $darkgray; color: $lightgray;
+            font-family: $brandongrotesque; font-weight: normal;
+            font-size: 36px; line-height: 36px; padding: 10px 15px;
+            cursor: pointer; z-index: 2;
+            width: 260px;
+            &:after {
+                content: "\f055"; font-size:21px;
+                display: inline-block; margin-left:10px;
+                font-family: 'FontAwesome';
+            }
+        }
+
+        .pre-intructions {
+            font-family: $brandongrotesque; line-height: 41px;
+            p { margin: 0; }
+            .box-top {
+                background-color: $gray; padding:10px 20px;
+                color: #bcbdbf; 
+                .line1 { font-size: 36px; }
+                .line2 { font-size: 44px; color: #eff0f0; }
+                .line3 { font-size: 31px; }
+            }
+            .box-lower {
+                padding: 5px 20px; font-size: 31px; color: #fff;
+                cursor: pointer;
+                &:before {
+                    content: "\f055"; font-size:21px;
+                    color: #f2f4f4; display: inline-block; margin-right:5px;
+                    font-family: 'FontAwesome';
+                }
+            }
+        }
+        .form-wrapper {
+            padding: 5px 20px;
+            .form-item {
+                margin: 0;
+                label { display: none; }
+            }
+            input[type=text] {
+                border: 0; padding: 3px 10px;
+                font-size:22px; color: #808285; 
+            }
+            input[type=submit] {
+                background-color: $gray; font-size: 22px; color: #fff;
+                padding: 5px 20px; border: 0;
+            }            
+        }
+        .field-type-datetime {
+            .form-wrapper {
+                padding: 0; border: 0;
+                .form-item { margin-right: 10px; }
+                .form-select-wrapper { display: block; }
+            }
+        }
+
+        // select field styling
+        .form-select-wrapper {
+            position: relative;
+            vertical-align: middle;
+            &:before, &:after {
+                content: "";
+                position: absolute;
+                pointer-events: none;
+            }
+            &:after {
+                content: "\25BC";
+                height: 1rem;
+                font-size: .625rem;
+                line-height: 1;
+                right: 1.2rem;
+                top: 50%; margin-top: -.5rem;
+                color: $gray;
+            }
+            &:before {
+                width: 2rem;
+                right: 0; top: 0; bottom: 0;
+            }
+            select {
+                text-indent:0.01px;
+                text-overflow: "";
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                font-size: inherit; /* inherit size from .custom-dropdown */
+                padding: 5px .5rem; /* add some space*/
+                margin: 0; /* remove default margins */
+                border: 0;
+                padding-right: 2.5rem; /* accommodate with the pseudo elements for the dropdown arrow */				
+                background-color: #fff;
+                border-radius: 0;
+                color: #808285; 
+            }
+        }
+    }
+    #content {
+        font-size: 1.375rem; line-height: 2rem; color: $textgray;
+        p { margin: 0 0 16px 0; }
+        h1 {
+            color: $tealgreen; font-size:130px; font-family: $brandongrotesque;
+            line-height:130px; font-weight: 300; margin-bottom: 20px;
+        }
+        h2 { 
+            color: $lightgreen; font-size: 2.25rem; line-height:32px; font-family: $brandongrotesque; 
+            font-weight: normal; margin: 0 0 8px 0;
+        }
+        a { 
+            color: $tealgreen; text-decoration: none;
+        }
+    }
+    .region-sidebar-second {
+        position: relative; 
+    }
+    // team section
+    /*
+    .view-team-list {
+        .views-field {
+            margin-left:25%; margin-bottom: 10px;
+        }
+        .views-field-field-image {
+            float: left; width: 25%; margin-left:0; 
+            padding-right:20px; box-sizing: border-box;
+        }
+    }
+    */
+    // news section
+    .view-news-list, .view-team-list {
+        .views-row {
+            padding:20px 0;
+            border-bottom: 1px $lightgreen solid;
+            .views-field-created {
+                color: $tealgreen;
+            }
+            .views-field {
+                margin-left: 25%; margin-bottom:10px;
+            }
+            .views-field-field-image {
+                float: left; margin-left: 0%; width: 25%;
+                padding-right:20px; box-sizing: border-box;
+            }
+        }
+    }
+    .view-team-list {
+        .views-row { border: none; }
+    }
+}
+
+// home page 
+.front {
+    #page {
+        h1.page__title {
+            display: none;
+        }
+        #main {
+            padding: 0; max-width:100%;
+            #content {
+                padding: 0; margin: 0;
+            }
+            #block-views-homepage-images-block {
+                position: absolute; top: 0; width: 100%;
+                img { width: 100%; }
+            }
+            #block-block-3 {
+                position:fixed; width: 100%;
+                background: rgba(0,0,0,.5); 
+                left: 0; bottom: 0; margin-bottom: 0;
+                color: #e1e2e3; font-size: 29px; line-height: 35px;
+                font-family: $brandongrotesque;
+                ul {
+                    margin: 0 auto;
+                    list-style: none; padding: 0;
+                    display: table;
+                    li {
+                        display: table-cell; padding: 10px 20px;
+                        border-right: 1px #e1e2e3 solid;
+                        margin: 0 0 0 0px; box-sizing: border-box;
+                        vertical-align: top;
+                        &.col1 { width: 15%; }
+                        &.col2 { width: 30%; }
+                        &.col3 { width: 25%; }
+                        &.col4 { width: 30%; border: none; }
+                    }
+                    .left {
+                        float: left; width:30%; padding-right:10px;
+                        box-sizing: border-box;
+                    }
+                    .right {
+                        float: right; width:70%;
+                    }
+                }
+                .savings {
+                    color: #fecc40;
+                }
+                .comparison {
+                    font-size: 19px; line-height: 20px;
+                    margin-top:20px;
+                    .label { float:left; }
+                    .value { float: right; }
+                }
+                .col1 {
+                    line-height: 45px;
+                    .line1 { font-size: 36px; color: #bcbdc0; }
+                    .line2 { font-size: 53px; }
+                }
+                .col3 {
+                    .savings { color: #3ec1c5; }
+                }
+                .col4 {
+                    .savings { color: #adc64c;  }
+                }
+            }
+        }
+    }
+    
+    
+}
