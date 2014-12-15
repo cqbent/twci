@@ -2048,6 +2048,7 @@ TWCI custom styling
 
 /* line 32, ../sass/_twci.scss */
 #main {
+  font-weight: 300;
   max-width: 1400px;
   margin: 0 auto;
   /*
@@ -2062,26 +2063,26 @@ TWCI custom styling
   }
   */
 }
-/* line 34, ../sass/_twci.scss */
+/* line 35, ../sass/_twci.scss */
 #main .field-name-field-background-image {
   position: absolute;
   top: 0;
   right: 0;
   text-align: right;
 }
-/* line 37, ../sass/_twci.scss */
+/* line 38, ../sass/_twci.scss */
 #main .field-name-field-background-image img {
   width: 50%;
 }
-/* line 40, ../sass/_twci.scss */
+/* line 41, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation {
   background-color: #b2b3b5;
 }
-/* line 42, ../sass/_twci.scss */
+/* line 43, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation form {
   padding-bottom: 10px;
 }
-/* line 45, ../sass/_twci.scss */
+/* line 46, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .block__title {
   position: absolute;
   right: 0;
@@ -2100,7 +2101,7 @@ TWCI custom styling
   z-index: 2;
   width: 260px;
 }
-/* line 54, ../sass/_twci.scss */
+/* line 55, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .block__title:after {
   content: "\f055";
   font-size: 21px;
@@ -2108,42 +2109,42 @@ TWCI custom styling
   margin-left: 10px;
   font-family: 'FontAwesome';
 }
-/* line 61, ../sass/_twci.scss */
+/* line 62, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .pre-intructions {
   font-family: "brandon-grotesque", Verdana, Arial;
   line-height: 41px;
 }
-/* line 63, ../sass/_twci.scss */
+/* line 64, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .pre-intructions p {
   margin: 0;
 }
-/* line 64, ../sass/_twci.scss */
+/* line 65, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .pre-intructions .box-top {
   background-color: #76787b;
   padding: 10px 20px;
   color: #bcbdbf;
 }
-/* line 67, ../sass/_twci.scss */
+/* line 68, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .pre-intructions .box-top .line1 {
   font-size: 36px;
 }
-/* line 68, ../sass/_twci.scss */
+/* line 69, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .pre-intructions .box-top .line2 {
   font-size: 44px;
   color: #eff0f0;
 }
-/* line 69, ../sass/_twci.scss */
+/* line 70, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .pre-intructions .box-top .line3 {
   font-size: 31px;
 }
-/* line 71, ../sass/_twci.scss */
+/* line 72, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .pre-intructions .box-lower {
   padding: 5px 20px;
   font-size: 31px;
   color: #fff;
   cursor: pointer;
 }
-/* line 74, ../sass/_twci.scss */
+/* line 75, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .pre-intructions .box-lower:before {
   content: "\f055";
   font-size: 21px;
@@ -2152,26 +2153,26 @@ TWCI custom styling
   margin-right: 5px;
   font-family: 'FontAwesome';
 }
-/* line 81, ../sass/_twci.scss */
+/* line 82, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .form-wrapper {
   padding: 5px 20px;
 }
-/* line 83, ../sass/_twci.scss */
+/* line 84, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .form-wrapper .form-item {
   margin: 0;
 }
-/* line 85, ../sass/_twci.scss */
+/* line 86, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .form-wrapper .form-item label {
   display: none;
 }
-/* line 87, ../sass/_twci.scss */
+/* line 88, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .form-wrapper input[type=text] {
   border: 0;
   padding: 3px 10px;
   font-size: 22px;
   color: #808285;
 }
-/* line 91, ../sass/_twci.scss */
+/* line 92, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .form-wrapper input[type=submit] {
   background-color: #76787b;
   font-size: 22px;
@@ -2179,31 +2180,31 @@ TWCI custom styling
   padding: 5px 20px;
   border: 0;
 }
-/* line 97, ../sass/_twci.scss */
+/* line 98, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .field-type-datetime .form-wrapper {
   padding: 0;
   border: 0;
 }
-/* line 99, ../sass/_twci.scss */
+/* line 100, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .field-type-datetime .form-wrapper .form-item {
   margin-right: 10px;
 }
-/* line 100, ../sass/_twci.scss */
+/* line 101, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .field-type-datetime .form-wrapper .form-select-wrapper {
   display: block;
 }
-/* line 105, ../sass/_twci.scss */
+/* line 106, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .form-select-wrapper {
   position: relative;
   vertical-align: middle;
 }
-/* line 108, ../sass/_twci.scss */
+/* line 109, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .form-select-wrapper:before, #main #block-entityform-block-schedule-consultation .form-select-wrapper:after {
   content: "";
   position: absolute;
   pointer-events: none;
 }
-/* line 113, ../sass/_twci.scss */
+/* line 114, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .form-select-wrapper:after {
   content: "\25BC";
   height: 1rem;
@@ -2214,14 +2215,14 @@ TWCI custom styling
   margin-top: -.5rem;
   color: #76787b;
 }
-/* line 122, ../sass/_twci.scss */
+/* line 123, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .form-select-wrapper:before {
   width: 2rem;
   right: 0;
   top: 0;
   bottom: 0;
 }
-/* line 126, ../sass/_twci.scss */
+/* line 127, ../sass/_twci.scss */
 #main #block-entityform-block-schedule-consultation .form-select-wrapper select {
   text-indent: 0.01px;
   text-overflow: "";
@@ -2241,17 +2242,17 @@ TWCI custom styling
   border-radius: 0;
   color: #808285;
 }
-/* line 143, ../sass/_twci.scss */
+/* line 144, ../sass/_twci.scss */
 #main #content {
   font-size: 1.375rem;
   line-height: 2rem;
   color: #6d6e70;
 }
-/* line 145, ../sass/_twci.scss */
+/* line 146, ../sass/_twci.scss */
 #main #content p {
   margin: 0 0 16px 0;
 }
-/* line 146, ../sass/_twci.scss */
+/* line 147, ../sass/_twci.scss */
 #main #content h1 {
   color: #00aaac;
   font-size: 130px;
@@ -2260,7 +2261,7 @@ TWCI custom styling
   font-weight: 300;
   margin-bottom: 20px;
 }
-/* line 150, ../sass/_twci.scss */
+/* line 151, ../sass/_twci.scss */
 #main #content h2 {
   color: #a0be2e;
   font-size: 2.25rem;
@@ -2269,30 +2270,30 @@ TWCI custom styling
   font-weight: normal;
   margin: 0 0 8px 0;
 }
-/* line 154, ../sass/_twci.scss */
+/* line 155, ../sass/_twci.scss */
 #main #content a {
   color: #00aaac;
   text-decoration: none;
 }
-/* line 158, ../sass/_twci.scss */
+/* line 159, ../sass/_twci.scss */
 #main .region-sidebar-second {
   position: relative;
 }
-/* line 175, ../sass/_twci.scss */
+/* line 176, ../sass/_twci.scss */
 #main .view-news-list .views-row, #main .view-team-list .views-row {
   padding: 20px 0;
   border-bottom: 1px #a0be2e solid;
 }
-/* line 178, ../sass/_twci.scss */
+/* line 179, ../sass/_twci.scss */
 #main .view-news-list .views-row .views-field-created, #main .view-team-list .views-row .views-field-created {
   color: #00aaac;
 }
-/* line 181, ../sass/_twci.scss */
+/* line 182, ../sass/_twci.scss */
 #main .view-news-list .views-row .views-field, #main .view-team-list .views-row .views-field {
   margin-left: 25%;
   margin-bottom: 10px;
 }
-/* line 184, ../sass/_twci.scss */
+/* line 185, ../sass/_twci.scss */
 #main .view-news-list .views-row .views-field-field-image, #main .view-team-list .views-row .views-field-field-image {
   float: left;
   margin-left: 0%;
@@ -2300,36 +2301,36 @@ TWCI custom styling
   padding-right: 20px;
   box-sizing: border-box;
 }
-/* line 191, ../sass/_twci.scss */
+/* line 192, ../sass/_twci.scss */
 #main .view-team-list .views-row {
   border: none;
 }
 
-/* line 198, ../sass/_twci.scss */
+/* line 199, ../sass/_twci.scss */
 .front #page h1.page__title {
   display: none;
 }
-/* line 201, ../sass/_twci.scss */
+/* line 202, ../sass/_twci.scss */
 .front #page #main {
   padding: 0;
   max-width: 100%;
 }
-/* line 203, ../sass/_twci.scss */
+/* line 204, ../sass/_twci.scss */
 .front #page #main #content {
   padding: 0;
   margin: 0;
 }
-/* line 206, ../sass/_twci.scss */
+/* line 207, ../sass/_twci.scss */
 .front #page #main #block-views-homepage-images-block {
   position: absolute;
   top: 0;
   width: 100%;
 }
-/* line 208, ../sass/_twci.scss */
+/* line 209, ../sass/_twci.scss */
 .front #page #main #block-views-homepage-images-block img {
   width: 100%;
 }
-/* line 210, ../sass/_twci.scss */
+/* line 211, ../sass/_twci.scss */
 .front #page #main #block-block-3 {
   position: fixed;
   width: 100%;
@@ -2342,14 +2343,14 @@ TWCI custom styling
   line-height: 35px;
   font-family: "brandon-grotesque", Verdana, Arial;
 }
-/* line 216, ../sass/_twci.scss */
+/* line 217, ../sass/_twci.scss */
 .front #page #main #block-block-3 ul {
   margin: 0 auto;
   list-style: none;
   padding: 0;
   display: table;
 }
-/* line 220, ../sass/_twci.scss */
+/* line 221, ../sass/_twci.scss */
 .front #page #main #block-block-3 ul li {
   display: table-cell;
   padding: 10px 20px;
@@ -2358,75 +2359,75 @@ TWCI custom styling
   box-sizing: border-box;
   vertical-align: top;
 }
-/* line 225, ../sass/_twci.scss */
+/* line 226, ../sass/_twci.scss */
 .front #page #main #block-block-3 ul li.col1 {
   width: 15%;
 }
-/* line 226, ../sass/_twci.scss */
+/* line 227, ../sass/_twci.scss */
 .front #page #main #block-block-3 ul li.col2 {
   width: 28%;
 }
-/* line 227, ../sass/_twci.scss */
+/* line 228, ../sass/_twci.scss */
 .front #page #main #block-block-3 ul li.col3 {
   width: 27%;
 }
-/* line 228, ../sass/_twci.scss */
+/* line 229, ../sass/_twci.scss */
 .front #page #main #block-block-3 ul li.col4 {
   width: 30%;
   border: none;
 }
-/* line 230, ../sass/_twci.scss */
+/* line 231, ../sass/_twci.scss */
 .front #page #main #block-block-3 ul .left {
   float: left;
   width: 30%;
   padding-right: 10px;
   box-sizing: border-box;
 }
-/* line 234, ../sass/_twci.scss */
+/* line 235, ../sass/_twci.scss */
 .front #page #main #block-block-3 ul .right {
   float: right;
   width: 70%;
 }
-/* line 238, ../sass/_twci.scss */
+/* line 239, ../sass/_twci.scss */
 .front #page #main #block-block-3 .savings {
   color: #fecc40;
 }
-/* line 241, ../sass/_twci.scss */
+/* line 242, ../sass/_twci.scss */
 .front #page #main #block-block-3 .comparison {
   font-size: 19px;
   line-height: 20px;
   margin-top: 20px;
 }
-/* line 244, ../sass/_twci.scss */
+/* line 245, ../sass/_twci.scss */
 .front #page #main #block-block-3 .comparison .label {
   float: left;
 }
-/* line 245, ../sass/_twci.scss */
+/* line 246, ../sass/_twci.scss */
 .front #page #main #block-block-3 .comparison .value {
   float: right;
 }
-/* line 247, ../sass/_twci.scss */
+/* line 248, ../sass/_twci.scss */
 .front #page #main #block-block-3 object {
   max-width: 100%;
 }
-/* line 248, ../sass/_twci.scss */
+/* line 249, ../sass/_twci.scss */
 .front #page #main #block-block-3 .col1 {
   line-height: 45px;
 }
-/* line 250, ../sass/_twci.scss */
+/* line 251, ../sass/_twci.scss */
 .front #page #main #block-block-3 .col1 .line1 {
   font-size: 36px;
   color: #bcbdc0;
 }
-/* line 251, ../sass/_twci.scss */
+/* line 252, ../sass/_twci.scss */
 .front #page #main #block-block-3 .col1 .line2 {
   font-size: 53px;
 }
-/* line 254, ../sass/_twci.scss */
+/* line 255, ../sass/_twci.scss */
 .front #page #main #block-block-3 .col3 .savings {
   color: #3ec1c5;
 }
-/* line 257, ../sass/_twci.scss */
+/* line 258, ../sass/_twci.scss */
 .front #page #main #block-block-3 .col4 .savings {
   color: #adc64c;
 }
