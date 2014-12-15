@@ -223,8 +223,8 @@ TWCI custom styling
                         margin: 0 0 0 0px; box-sizing: border-box;
                         vertical-align: top;
                         &.col1 { width: 15%; }
-                        &.col2 { width: 30%; }
-                        &.col3 { width: 25%; }
+                        &.col2 { width: 28%; }
+                        &.col3 { width: 27%; }
                         &.col4 { width: 30%; border: none; }
                     }
                     .left {
@@ -244,6 +244,7 @@ TWCI custom styling
                     .label { float:left; }
                     .value { float: right; }
                 }
+                object { max-width: 100%; }
                 .col1 {
                     line-height: 45px;
                     .line1 { font-size: 36px; color: #bcbdc0; }

@@ -2364,11 +2364,11 @@ TWCI custom styling
 }
 /* line 226, ../sass/_twci.scss */
 .front #page #main #block-block-3 ul li.col2 {
-  width: 30%;
+  width: 28%;
 }
 /* line 227, ../sass/_twci.scss */
 .front #page #main #block-block-3 ul li.col3 {
-  width: 25%;
+  width: 27%;
 }
 /* line 228, ../sass/_twci.scss */
 .front #page #main #block-block-3 ul li.col4 {
@@ -2406,23 +2406,27 @@ TWCI custom styling
   float: right;
 }
 /* line 247, ../sass/_twci.scss */
+.front #page #main #block-block-3 object {
+  max-width: 100%;
+}
+/* line 248, ../sass/_twci.scss */
 .front #page #main #block-block-3 .col1 {
   line-height: 45px;
 }
-/* line 249, ../sass/_twci.scss */
+/* line 250, ../sass/_twci.scss */
 .front #page #main #block-block-3 .col1 .line1 {
   font-size: 36px;
   color: #bcbdc0;
 }
-/* line 250, ../sass/_twci.scss */
+/* line 251, ../sass/_twci.scss */
 .front #page #main #block-block-3 .col1 .line2 {
   font-size: 53px;
 }
-/* line 253, ../sass/_twci.scss */
+/* line 254, ../sass/_twci.scss */
 .front #page #main #block-block-3 .col3 .savings {
   color: #3ec1c5;
 }
-/* line 256, ../sass/_twci.scss */
+/* line 257, ../sass/_twci.scss */
 .front #page #main #block-block-3 .col4 .savings {
   color: #adc64c;
 }
