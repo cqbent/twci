@@ -81,14 +81,15 @@ $helvetica:       Helvetica, Arial, "Nimbus Sans L", sans-serif;
 $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
 
 $brandongrotesque: 'brandon-grotesque', Verdana, Arial;
+$whitney: 'Whitney SSm A', 'Whitney SSm B', sans-serif;
 
 // For an explanation of why "sans-serif" is at the end of this list, see
 // http://meyerweb.com/eric/thoughts/2010/02/12/fixed-monospace-sizing/
 $courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 
 // Now create some variables for the font stacks we want to use on this site.
-$base-font-family: $verdana; // The font family set on the html element.
-$font-body:        $verdana;
+$base-font-family: $whitney; // The font family set on the html element.
+$font-body:        $whitney;
 $font-monospace:   $courier;
 
 

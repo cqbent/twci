@@ -111,7 +111,7 @@ audio:not([controls]) {
  */
 /* line 106, ../sass/_normalize.scss */
 html {
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+  font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
   /* 1 */
   font-size: 100%;
   /* 3 */
