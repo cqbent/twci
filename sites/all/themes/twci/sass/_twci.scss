@@ -212,6 +212,7 @@ TWCI custom styling
 }
 
 #footer {
+    position: fixed; bottom:0px; width:100%;
     background-color: $darkgray;
     color: $lightgray; font-size:12px; 
     padding: 5px 0;
@@ -246,6 +247,9 @@ TWCI custom styling
         h1.page__title {
             display: none;
         }
+        #footer {
+            background: rgba($darkgray, .85);
+        }
         #main {
             padding: 0; max-width:100%;
             #content {
@@ -264,7 +268,7 @@ TWCI custom styling
             #block-block-3, .field-name-body {
                 position:fixed; width: 100%;
                 background: rgba(0,0,0,.5); 
-                left: 0; bottom: 0; margin-bottom: 0;
+                left: 0; bottom: 34px; margin-bottom: 0;
                 color: #e1e2e3; font-size: 25px; line-height: 35px;
                 font-family: $brandongrotesque; font-weight:normal;
                 ul {

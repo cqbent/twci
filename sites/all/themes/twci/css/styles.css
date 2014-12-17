@@ -2474,89 +2474,96 @@ TWCI custom styling
 
 /* line 214, ../sass/_twci.scss */
 #footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
   background-color: #404041;
   color: #c7c8ca;
   font-size: 12px;
   padding: 5px 0;
 }
-/* line 218, ../sass/_twci.scss */
+/* line 219, ../sass/_twci.scss */
 #footer .footer-block {
   max-width: 1300px;
   margin: 0 auto;
   box-sizing: border-box;
 }
-/* line 221, ../sass/_twci.scss */
+/* line 222, ../sass/_twci.scss */
 #footer .footer-block p {
   margin: 0;
 }
-/* line 222, ../sass/_twci.scss */
+/* line 223, ../sass/_twci.scss */
 #footer .footer-block a {
   color: #c7c8ca;
   text-decoration: none;
 }
-/* line 223, ../sass/_twci.scss */
+/* line 224, ../sass/_twci.scss */
 #footer .footer-block .left {
   float: left;
 }
-/* line 226, ../sass/_twci.scss */
+/* line 227, ../sass/_twci.scss */
 #footer .footer-block .right {
   float: right;
 }
-/* line 228, ../sass/_twci.scss */
+/* line 229, ../sass/_twci.scss */
 #footer .footer-block .right a {
   padding: 0 10px;
 }
-/* line 230, ../sass/_twci.scss */
+/* line 231, ../sass/_twci.scss */
 #footer .footer-block .right a:last-child {
   padding-right: 0;
 }
 
-/* line 241, ../sass/_twci.scss */
+/* line 242, ../sass/_twci.scss */
 .front #page #header {
   border: 0;
   min-height: 97px;
   position: fixed;
   z-index: 2;
 }
-/* line 246, ../sass/_twci.scss */
+/* line 247, ../sass/_twci.scss */
 .front #page h1.page__title {
   display: none;
 }
-/* line 249, ../sass/_twci.scss */
+/* line 250, ../sass/_twci.scss */
+.front #page #footer {
+  background: rgba(64, 64, 65, 0.85);
+}
+/* line 253, ../sass/_twci.scss */
 .front #page #main {
   padding: 0;
   max-width: 100%;
 }
-/* line 251, ../sass/_twci.scss */
+/* line 255, ../sass/_twci.scss */
 .front #page #main #content {
   padding: 0;
   margin: 0;
 }
-/* line 254, ../sass/_twci.scss */
+/* line 258, ../sass/_twci.scss */
 .front #page #main #block-views-homepage-images-block {
   position: absolute;
   top: 0;
   width: 100%;
 }
-/* line 256, ../sass/_twci.scss */
+/* line 260, ../sass/_twci.scss */
 .front #page #main #block-views-homepage-images-block img {
   width: 100%;
   position: fixed;
 }
-/* line 258, ../sass/_twci.scss */
+/* line 262, ../sass/_twci.scss */
 .front #page #main #block-views-homepage-images-block, .front #page #main .home_bk_img {
   height: 100%;
   width: 100%;
   position: fixed;
   background-size: cover;
 }
-/* line 264, ../sass/_twci.scss */
+/* line 268, ../sass/_twci.scss */
 .front #page #main #block-block-3, .front #page #main .field-name-body {
   position: fixed;
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
   left: 0;
-  bottom: 0;
+  bottom: 34px;
   margin-bottom: 0;
   color: #e1e2e3;
   font-size: 25px;
@@ -2564,7 +2571,7 @@ TWCI custom styling
   font-family: "brandon-grotesque", Verdana, Arial;
   font-weight: normal;
 }
-/* line 270, ../sass/_twci.scss */
+/* line 274, ../sass/_twci.scss */
 .front #page #main #block-block-3 ul, .front #page #main .field-name-body ul {
   margin: 0 auto;
   list-style: none;
@@ -2572,7 +2579,7 @@ TWCI custom styling
   display: table;
   max-width: 1300px;
 }
-/* line 274, ../sass/_twci.scss */
+/* line 278, ../sass/_twci.scss */
 .front #page #main #block-block-3 ul li, .front #page #main .field-name-body ul li {
   display: table-cell;
   padding: 10px 10px;
@@ -2581,66 +2588,66 @@ TWCI custom styling
   box-sizing: border-box;
   vertical-align: top;
 }
-/* line 280, ../sass/_twci.scss */
+/* line 284, ../sass/_twci.scss */
 .front #page #main #block-block-3 ul .left, .front #page #main .field-name-body ul .left {
   float: left;
   width: 35%;
   padding-right: 10px;
   box-sizing: border-box;
 }
-/* line 284, ../sass/_twci.scss */
+/* line 288, ../sass/_twci.scss */
 .front #page #main #block-block-3 ul .right, .front #page #main .field-name-body ul .right {
   float: right;
   width: 65%;
 }
-/* line 288, ../sass/_twci.scss */
+/* line 292, ../sass/_twci.scss */
 .front #page #main #block-block-3 .savings, .front #page #main .field-name-body .savings {
   color: #fecc40;
 }
-/* line 291, ../sass/_twci.scss */
+/* line 295, ../sass/_twci.scss */
 .front #page #main #block-block-3 .comparison, .front #page #main .field-name-body .comparison {
   font-size: 17px;
   line-height: 20px;
   margin-top: 10px;
 }
-/* line 294, ../sass/_twci.scss */
+/* line 298, ../sass/_twci.scss */
 .front #page #main #block-block-3 .comparison .label, .front #page #main .field-name-body .comparison .label {
   float: left;
 }
-/* line 295, ../sass/_twci.scss */
+/* line 299, ../sass/_twci.scss */
 .front #page #main #block-block-3 .comparison .value, .front #page #main .field-name-body .comparison .value {
   float: right;
 }
-/* line 297, ../sass/_twci.scss */
+/* line 301, ../sass/_twci.scss */
 .front #page #main #block-block-3 object, .front #page #main .field-name-body object {
   height: 115px;
 }
-/* line 298, ../sass/_twci.scss */
+/* line 302, ../sass/_twci.scss */
 .front #page #main #block-block-3 .col1, .front #page #main .field-name-body .col1 {
   line-height: 45px;
 }
-/* line 300, ../sass/_twci.scss */
+/* line 304, ../sass/_twci.scss */
 .front #page #main #block-block-3 .col1 .line1, .front #page #main .field-name-body .col1 .line1 {
   font-size: 36px;
   color: #bcbdc0;
 }
-/* line 301, ../sass/_twci.scss */
+/* line 305, ../sass/_twci.scss */
 .front #page #main #block-block-3 .col1 .line2, .front #page #main .field-name-body .col1 .line2 {
   font-size: 53px;
 }
-/* line 304, ../sass/_twci.scss */
+/* line 308, ../sass/_twci.scss */
 .front #page #main #block-block-3 .col3 .savings, .front #page #main .field-name-body .col3 .savings {
   color: #3ec1c5;
 }
-/* line 305, ../sass/_twci.scss */
+/* line 309, ../sass/_twci.scss */
 .front #page #main #block-block-3 .col3 .left, .front #page #main .field-name-body .col3 .left {
   width: 25%;
 }
-/* line 306, ../sass/_twci.scss */
+/* line 310, ../sass/_twci.scss */
 .front #page #main #block-block-3 .col3 .right, .front #page #main .field-name-body .col3 .right {
   width: 75%;
 }
-/* line 309, ../sass/_twci.scss */
+/* line 313, ../sass/_twci.scss */
 .front #page #main #block-block-3 .col4 .savings, .front #page #main .field-name-body .col4 .savings {
   color: #adc64c;
 }
