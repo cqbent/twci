@@ -8,7 +8,15 @@
  */
 ?>
 
-<div id="page">
+<?php  
+    $bkstyle = '';
+    if (isset($node)) {
+        if ($bkimg = display_bk_image($node)) {
+            $bkstyle = 'style="background-image: url('.$bkimg.')"';
+        }
+    }
+?>
+<div id="page" <?php print $bkstyle; ?>>
     
   <header class="header" id="header" role="banner">
       
@@ -86,15 +94,10 @@
     </div>
 
   </header>
+    
 
   <div id="main">
       
-    <?php  
-        if (isset($node)) {
-            display_bk_image($node);
-        }
-    ?>
-
     <div id="content" class="column" role="main">
       <?php print render($page['highlighted']); ?>
       <?php print $breadcrumb; ?>

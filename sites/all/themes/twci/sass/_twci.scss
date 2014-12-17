@@ -1,6 +1,9 @@
 /* 
 TWCI custom styling
 */
+#page {
+    background-repeat: no-repeat;
+}
 #header {
     // dark gray, 100%,  set/max height, fonts, font size, color, 
     width:100%; margin: 0 auto; padding: 10px 0 0 0;
@@ -11,7 +14,7 @@ TWCI custom styling
         color: $lightgray;
     }
     .inner {
-        max-width:1400px; margin:0 auto; position: relative;
+        max-width:1300px; margin:0 auto; position: relative;
     }
     .block-menu-block {
         // position, color, size
@@ -29,14 +32,14 @@ TWCI custom styling
         float: right; margin: 40px 0 0 0;
     }
 }
+.field-name-field-background-image {
+    position: absolute; right: 0;
+    text-align: right;
+    img {  }
+}
 #main {
     font-weight:300;
-    max-width:1400px; margin: 0 auto;
-    .field-name-field-background-image {
-        position: absolute; top: 0; right: 0;
-        text-align: right;
-        img { width: 50%; }
-    }
+    max-width:1300px; margin: 0 auto;
     // schedule consultation form
     #block-entityform-block-schedule-consultation {
         background-color: #b2b3b5; 
@@ -58,7 +61,6 @@ TWCI custom styling
                 font-family: 'FontAwesome';
             }
         }
-
         .pre-intructions {
             font-family: $brandongrotesque; line-height: 41px;
             p { margin: 0; }
@@ -79,29 +81,45 @@ TWCI custom styling
                 }
             }
         }
+        &.active {
+            .pre-intructions {
+                .box-lower {
+                    color: $textgray;
+                    &:before { content: "\f056"; color: $textgray; }
+                }
+            }
+        }
         .form-wrapper {
-            padding: 5px 20px;
+            padding: 5px 20px; 
             .form-item {
                 margin: 0;
                 label { display: none; }
             }
+            input, select {
+                font-family: $whitney; font-weight: 300;
+            }
             input[type=text] {
-                border: 0; padding: 3px 10px;
+                border: 0; padding: 7px 10px;
                 font-size:22px; color: #808285; 
+                
             }
             input[type=submit] {
                 background-color: $gray; font-size: 22px; color: #fff;
                 padding: 5px 20px; border: 0;
-            }            
+            }  
+            legend { color: #fff; }
         }
         .field-type-datetime {
             .form-wrapper {
                 padding: 0; border: 0;
                 .form-item { margin-right: 10px; }
                 .form-select-wrapper { display: block; }
+                .container-inline-date .date-padding { padding-left: 0; }
             }
         }
-
+        .field-name-field-preferred-time {
+            select { width: 100%; }
+        }
         // select field styling
         .form-select-wrapper {
             position: relative;
@@ -131,7 +149,7 @@ TWCI custom styling
                 -moz-appearance: none;
                 appearance: none;
                 font-size: inherit; /* inherit size from .custom-dropdown */
-                padding: 5px .5rem; /* add some space*/
+                padding: 7px .5rem; /* add some space*/
                 margin: 0; /* remove default margins */
                 border: 0;
                 padding-right: 2.5rem; /* accommodate with the pseudo elements for the dropdown arrow */				
@@ -142,15 +160,15 @@ TWCI custom styling
         }
     }
     #content {
-        font-size: 1.375rem; line-height: 2rem; color: $textgray;
-        p { margin: 0 0 16px 0; }
+        font-size: 1.1875rem; line-height: 2rem; color: $textgray;
+        p { margin: 0 0 24px 0; }
         h1 {
             color: $tealgreen; font-size:130px; font-family: $brandongrotesque;
             line-height:130px; font-weight: 300; margin-bottom: 20px;
         }
         h2 { 
             color: $lightgreen; font-size: 2.25rem; line-height:32px; font-family: $brandongrotesque; 
-            font-weight: normal; margin: 0 0 8px 0;
+            font-weight: normal; margin: 0 0 16px 0;
         }
         a { 
             color: $tealgreen; text-decoration: none;
@@ -193,9 +211,38 @@ TWCI custom styling
     }
 }
 
+#footer {
+    background-color: $darkgray;
+    color: $lightgray; font-size:12px; 
+    padding: 5px 0;
+    .footer-block {
+        max-width: 1300px; margin: 0 auto;
+        box-sizing: border-box;
+        p { margin: 0; }
+        a { color: $lightgray; text-decoration: none;  }
+        .left {
+            float: left;
+        }
+        .right { 
+            float: right; 
+            a {
+                padding:0 10px;
+                &:last-child {
+                    padding-right:0;
+                }
+            }
+        }
+    }
+}
+
 // home page 
 .front {
     #page {
+        #header {
+            border: 0;
+            min-height:97px;
+            position: fixed; z-index: 2;
+        }
         h1.page__title {
             display: none;
         }
@@ -206,46 +253,48 @@ TWCI custom styling
             }
             #block-views-homepage-images-block {
                 position: absolute; top: 0; width: 100%;
-                img { width: 100%; }
+                img { width: 100%; position: fixed; }
             }
-            #block-block-3 {
+            #block-views-homepage-images-block, .home_bk_img {
+                height:100%;
+                width:100%;
+                position:fixed;
+                background-size: cover;
+            }
+            #block-block-3, .field-name-body {
                 position:fixed; width: 100%;
                 background: rgba(0,0,0,.5); 
                 left: 0; bottom: 0; margin-bottom: 0;
-                color: #e1e2e3; font-size: 29px; line-height: 35px;
-                font-family: $brandongrotesque;
+                color: #e1e2e3; font-size: 25px; line-height: 35px;
+                font-family: $brandongrotesque; font-weight:normal;
                 ul {
                     margin: 0 auto;
                     list-style: none; padding: 0;
-                    display: table;
+                    display: table; max-width:1300px;
                     li {
-                        display: table-cell; padding: 10px 20px;
+                        display: table-cell; padding: 10px 10px;
                         border-right: 1px #e1e2e3 solid;
                         margin: 0 0 0 0px; box-sizing: border-box;
                         vertical-align: top;
-                        &.col1 { width: 15%; }
-                        &.col2 { width: 28%; }
-                        &.col3 { width: 27%; }
-                        &.col4 { width: 30%; border: none; }
                     }
                     .left {
-                        float: left; width:30%; padding-right:10px;
-                        box-sizing: border-box;
+                        float: left; width:35%; padding-right:10px;
+                        box-sizing: border-box; 
                     }
                     .right {
-                        float: right; width:70%;
+                        float: right; width:65%;
                     }
                 }
                 .savings {
                     color: #fecc40;
                 }
                 .comparison {
-                    font-size: 19px; line-height: 20px;
-                    margin-top:20px;
+                    font-size: 17px; line-height: 20px;
+                    margin-top:10px;
                     .label { float:left; }
                     .value { float: right; }
                 }
-                object { max-width: 100%; }
+                object { height:115px; }
                 .col1 {
                     line-height: 45px;
                     .line1 { font-size: 36px; color: #bcbdc0; }
@@ -253,6 +302,8 @@ TWCI custom styling
                 }
                 .col3 {
                     .savings { color: #3ec1c5; }
+                    .left { width:25%; }
+                    .right { width: 75%; }
                 }
                 .col4 {
                     .savings { color: #adc64c;  }

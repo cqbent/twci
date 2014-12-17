@@ -31,6 +31,16 @@ Drupal.behaviors.my_custom_behavior = {
     // home page: get height of window and set content to height
     var window_height = $(window).height();
     $('.front #page #content').css('height', window_height-150);
+    
+     /* mobile menu - add action */
+    $('.block-menu-block').click(function() {
+        if ($('.block-menu-block').hasClass('menu-active')) {
+            $('.block-menu-block').removeClass('menu-active');
+        }
+        else {
+            $('.block-menu-block').addClass('menu-active');
+        }
+    });
 
   }
 };

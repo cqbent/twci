@@ -55,7 +55,7 @@ function twci_preprocess_html(&$variables, $hook) {
 function twci_preprocess_page(&$variables, $hook) {
     drupal_add_js('//use.typekit.net/aur4mpg.js', 'external');
     drupal_add_js('try{Typekit.load();}catch(e){}', 'inline');
-    drupal_add_css('//cloud.typography.com/7299932/685246/css/fonts.css');
+    drupal_add_css('//cloud.typography.com/7299932/685246/css/fonts.css', 'external');
 }
 // */
 
@@ -157,9 +157,10 @@ function twci_select($variables) {
 function display_bk_image($node) {
     // if node has background image then get background image and display it 
     if (isset($node->field_background_image['und'][0])) {
-        $bkimg = field_view_field('node', $node, 'field_background_image', array('label' => 'hidden'));
-        //dsm($bkimg);
-        print render($bkimg);
+        //$bkimg = field_view_field('node', $node, 'field_background_image', array('label' => 'hidden'));
+        $bkimg = file_create_url($node->field_background_image['und'][0]['uri']);
+        //dsm($node->field_background_image);
+        return $bkimg;
     }
     
 }
