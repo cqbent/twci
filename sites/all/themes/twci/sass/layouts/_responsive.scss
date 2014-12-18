@@ -100,7 +100,7 @@ $zen-auto-include-item-base: false;
 }
 #main { 
     h1 {
-        font-size: 90px; line-height: 90px;
+        font-size: 50px; line-height: 50px;
     }
     padding-left: 20px; padding-right: 20px;
     #block-entityform-block-schedule-consultation {
@@ -225,6 +225,9 @@ $zen-auto-include-item-base: false;
         }
     }
     #main {
+        h1 {
+            font-size: 90px; line-height: 90px;
+        }
         #block-entityform-block-schedule-consultation {
             .block__title { 
             }
