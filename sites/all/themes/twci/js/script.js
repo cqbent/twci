@@ -30,7 +30,7 @@ Drupal.behaviors.my_custom_behavior = {
     
     // home page: get height of window and set content to height
     var window_height = $(window).height();
-    $('.front #page #content').css('height', window_height-150);
+    $('#page #content').css('min-height', window_height-150);
     
      /* mobile menu - add action */
     $('.block-menu-block').click(function() {

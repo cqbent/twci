@@ -105,7 +105,7 @@ TWCI custom styling
             }
             input[type=submit] {
                 background-color: $gray; font-size: 22px; color: #fff;
-                padding: 5px 20px; border: 0;
+                padding: 5px 20px; border: 0; width: 100%;
             }  
             legend { color: #fff; }
         }
@@ -163,8 +163,8 @@ TWCI custom styling
         font-size: 1.1875rem; line-height: 2rem; color: $textgray;
         p { margin: 0 0 24px 0; }
         h1 {
-            color: $tealgreen; font-size:130px; font-family: $brandongrotesque;
-            line-height:130px; font-weight: 300; margin-bottom: 20px;
+            color: $tealgreen; font-family: $brandongrotesque;
+            font-weight: 300; margin-bottom: 20px;
         }
         h2 { 
             color: $lightgreen; font-size: 2.25rem; line-height:32px; font-family: $brandongrotesque; 
@@ -264,54 +264,6 @@ TWCI custom styling
                 width:100%;
                 position:fixed;
                 background-size: cover;
-            }
-            #block-block-3, .field-name-body {
-                position:fixed; width: 100%;
-                background: rgba(0,0,0,.5); 
-                left: 0; bottom: 34px; margin-bottom: 0;
-                color: #e1e2e3; font-size: 25px; line-height: 35px;
-                font-family: $brandongrotesque; font-weight:normal;
-                ul {
-                    margin: 0 auto;
-                    list-style: none; padding: 0;
-                    display: table; max-width:1300px;
-                    li {
-                        display: table-cell; padding: 10px 10px;
-                        border-right: 1px #e1e2e3 solid;
-                        margin: 0 0 0 0px; box-sizing: border-box;
-                        vertical-align: top;
-                    }
-                    .left {
-                        float: left; width:35%; padding-right:10px;
-                        box-sizing: border-box; 
-                    }
-                    .right {
-                        float: right; width:65%;
-                    }
-                }
-                .savings {
-                    color: #fecc40;
-                }
-                .comparison {
-                    font-size: 17px; line-height: 20px;
-                    margin-top:10px;
-                    .label { float:left; }
-                    .value { float: right; }
-                }
-                object { height:115px; }
-                .col1 {
-                    line-height: 45px;
-                    .line1 { font-size: 36px; color: #bcbdc0; }
-                    .line2 { font-size: 53px; }
-                }
-                .col3 {
-                    .savings { color: #3ec1c5; }
-                    .left { width:25%; }
-                    .right { width: 75%; }
-                }
-                .col4 {
-                    .savings { color: #adc64c;  }
-                }
             }
         }
     }
