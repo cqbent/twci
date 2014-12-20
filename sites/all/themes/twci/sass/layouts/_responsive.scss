@@ -206,18 +206,12 @@ $zen-auto-include-item-base: false;
                                 display: inline-block; margin-left: 15px; font-size: .875rem;
                             }
                         }
-                        &.last {
-                            a {
-                                padding-right: 0; margin-right: 0;
-                                &:after { display: none; }
-                            }
-                            
-                        }
                         .menu {
                             position:absolute; padding:0; margin:0;
                             li { 
                                 list-style: none; height:40px; padding:0;
                                 background: none; border: none; float: left;
+                                
                             }
                         }
                         &.active-trail {
@@ -456,6 +450,11 @@ $zen-auto-include-item-base: false;
                             &.active-trail {
                                 &:after {
                                     margin-top:15px;
+                                }
+                            }
+                            &.reverse-dropdown {
+                                .menu {
+                                    right: 0;
                                 }
                             }
                         } 
