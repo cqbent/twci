@@ -194,7 +194,7 @@ $zen-auto-include-item-base: false;
                     display: none;
                 }
                 .menu-block-wrapper  > .menu {
-                    display: block; margin: 0;
+                    display: block; margin: 0; padding-top:0px;
                     &:after { content:""; display: block; clear: both;  }
                     > li {
                         padding: 0; float: left; background: none; border: none;
@@ -229,7 +229,7 @@ $zen-auto-include-item-base: false;
     }
     #main {
         h1 {
-            font-size: 90px; line-height: 70px;
+            font-size: 90px; line-height: 70px; padding-bottom:20px
         }
         #block-entityform-block-schedule-consultation {
             .block__title { 
@@ -461,7 +461,7 @@ $zen-auto-include-item-base: false;
     #main { 
         padding-left: 0; padding-right: 0;
         h1 {
-            font-size: 130px; line-height: 110px;
+            font-size: 130px; line-height: 110px; padding-bottom: 20px;
         }
         .not-front & {
             #block-entityform-block-schedule-consultation {

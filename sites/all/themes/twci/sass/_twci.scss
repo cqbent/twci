@@ -212,7 +212,7 @@ TWCI custom styling
 }
 
 #footer {
-    position: fixed; bottom:0px; width:100%;
+    position: fixed; bottom:0px; width:100%; z-index: 3;
     background-color: $darkgray;
     color: #c7c8ca; font-size:12px; 
     padding: 5px 0;
@@ -238,7 +238,7 @@ TWCI custom styling
         #header {
             border: 0;
             min-height:97px;
-            position: fixed; z-index: 2;
+            position: fixed; z-index: 3;
         }
         h1.page__title {
             display: none;

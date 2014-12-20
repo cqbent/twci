@@ -274,6 +274,7 @@ ul {
   #main h1 {
     font-size: 130px;
     line-height: 110px;
+    padding-bottom: 20px;
   }
   /* line 467, ../sass/layouts/_responsive.scss */
   .not-front #main #block-entityform-block-schedule-consultation {
