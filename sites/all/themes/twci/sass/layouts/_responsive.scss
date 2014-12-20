@@ -56,19 +56,21 @@ $zen-auto-include-item-base: false;
 
 // add padding to inner elements
 #header {
+    min-height: 97px;
     .inner { padding-left: 20px; padding-right: 20px; }
     .social-icons { 
         display: none;
     }
     .region-header {
         .block-menu-block { 
-            cursor: pointer;
+            cursor: pointer; margin-bottom: 0;
             &:after { 
                 position: absolute; right: 20px; top: 10px; content: "\f0c9"; font-family: FontAwesome; 
                 display: block; color: #fff; font-size: 30px;
             }
             .menu-block-wrapper > .menu { 
                 display:none; padding:0; list-style: none; margin:0px -20px; 
+                padding-top:10px;
                 > li { 
                     list-style: none; margin:0;
                     background: $gray; background: rgba($gray, .85); 
@@ -170,12 +172,13 @@ $zen-auto-include-item-base: false;
 @media all and (min-width: 780px) {
   #main {
     /* Move all the children of #main down to make room. */
-    padding-top: $nav-height;
+    padding-top: 30px;;
     position: relative;
   }
   
   #header {
       border-bottom: 40px $tealgreen solid; font-size: 1.3125rem;
+      min-height:137px;
         .social-icons {
             display: block;
             position: absolute; top:35px; right: 20px;
@@ -226,7 +229,7 @@ $zen-auto-include-item-base: false;
     }
     #main {
         h1 {
-            font-size: 90px; line-height: 90px;
+            font-size: 90px; line-height: 70px;
         }
         #block-entityform-block-schedule-consultation {
             .block__title { 
@@ -249,6 +252,16 @@ $zen-auto-include-item-base: false;
                 }
             }
         }
+    }
+    #footer {
+        .footer-block {
+            .left { float: left; }
+            .right { 
+                float: right; 
+                a { padding: 0 10px; }
+            }
+        }
+        
     }
     .front {
         #main {
@@ -448,24 +461,28 @@ $zen-auto-include-item-base: false;
     #main { 
         padding-left: 0; padding-right: 0;
         h1 {
-            font-size: 130px; line-height: 130px;
+            font-size: 130px; line-height: 110px;
         }
-        #block-entityform-block-schedule-consultation {
-            width: 100%;
-            form {
-                display: block;
-                .form-wrapper {
-                    display: none;
-                }
-            }
-            &.active {
+        .not-front & {
+            #block-entityform-block-schedule-consultation {
+                width: 100%;
                 form {
+                    display: block;
                     .form-wrapper {
-                        display: block;
+                        display: none;
+                    }
+                }
+                &.active {
+                    form {
+                        .form-wrapper {
+                            display: block;
+                        }
                     }
                 }
             }
         }
+        
+        
     }
     #footer {
         .footer-block {

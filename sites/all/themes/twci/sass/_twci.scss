@@ -7,7 +7,7 @@ TWCI custom styling
 #header {
     // dark gray, 100%,  set/max height, fonts, font size, color, 
     width:100%; margin: 0 auto; padding: 10px 0 0 0;
-    background-color: $darkgray; min-height:137px;
+    background-color: $darkgray; 
     font-family: $brandongrotesque; font-size: 1.3125rem; color: $lightgray;
     box-sizing: border-box;
     a {
@@ -214,23 +214,19 @@ TWCI custom styling
 #footer {
     position: fixed; bottom:0px; width:100%;
     background-color: $darkgray;
-    color: $lightgray; font-size:12px; 
+    color: #c7c8ca; font-size:12px; 
     padding: 5px 0;
     .footer-block {
         max-width: 1300px; margin: 0 auto;
         box-sizing: border-box;
         p { margin: 0; }
         a { color: $lightgray; text-decoration: none;  }
-        .left {
-            float: left;
-        }
         .right { 
-            float: right; 
             a {
                 padding:0 10px;
-                &:last-child {
-                    padding-right:0;
-                }
+                color: #939598;
+                &:first-child { padding-left:0; }
+                &:last-child { padding-right:0; }
             }
         }
     }
@@ -253,7 +249,7 @@ TWCI custom styling
         #main {
             padding: 0; max-width:100%;
             #content {
-                padding: 0; margin: 0;
+                padding: 0; position: relative; z-index: 2;
             }
             #block-views-homepage-images-block {
                 position: absolute; top: 0; width: 100%;
@@ -264,6 +260,26 @@ TWCI custom styling
                 width:100%;
                 position:fixed;
                 background-size: cover;
+            }
+            #block-entityform-block-schedule-consultation {
+                position: absolute; right: 0px; z-index: 2;
+                top: 165px; 
+                width: 400px;
+                .block__title {
+                    display: block;
+                }
+                @include breakpoint(maxsmall) {
+                    position: relative; width: 100%; top: 0; margin-top:20px;
+                    .block__title {
+                        display: none;
+                    }
+                }
+            }
+            #block-views-page-image-block {
+                @include breakpoint(maxsmall) {
+                    position: fixed; top: 97px;
+                }
+                
             }
         }
     }

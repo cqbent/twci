@@ -35,3 +35,18 @@
     @include element-invisible-off;
   }
 }
+
+@mixin breakpoint($point) {
+    @if $point == maxsmall {
+        @media (max-width: 780px) { @content; }
+    }
+    @if $point == minsmall {
+        @media (min-width: 780px) { @content; }
+    }
+    @if $point == smallmed {
+        @media (min-width: 780px) and (max-width: 1299px) { @content; }
+    }
+    @if $point == minlarge {
+        @media (min-width: 1300px) { @content; }
+    }
+}
