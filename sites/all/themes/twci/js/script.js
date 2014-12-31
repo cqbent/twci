@@ -59,6 +59,15 @@ Drupal.behaviors.my_custom_behavior = {
         $(bmb_menu_trail).removeClass('hover');
         $(this).addClass('hover');
     });
+    
+    /* home page mobile - push feature bar to bottom of page */
+    // get height of window; push body field to bottom
+    var w_height = $(window).height();
+    var f_height = $('#footer').height() + 20;
+    var col1_height = $('.field-name-body .col1').height() + 20;
+    var margin_y = w_height - f_height - col1_height;
+    $('.front #main .field-name-body').css('margin-top',margin_y);
+    console.log('w_height: '+w_height+', f_height: '+f_height+', col1_height: '+col1_height);
 
   }
 };

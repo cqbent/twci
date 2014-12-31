@@ -43,8 +43,24 @@ TWCI custom styling
     // schedule consultation form
     #block-entityform-block-schedule-consultation {
         background-color: #b2b3b5; 
+        &.active {
+            .block__title { display: none; }
+            .block__title {
+                transform-origin: 100% 0;
+                -webkit-transform-origin: 100% 0;
+                top: 0; right: 100%; margin-right:60px;
+                &:after { content: "\f056"; }
+            }
+            form {
+                display: block;
+            }
+        }
         form { 
             padding-bottom: 10px;
+            display: none;
+            .form-wrapper {
+                display: block;
+            }
         }
         .block__title {
             position: absolute;  right: 0;
@@ -67,11 +83,14 @@ TWCI custom styling
             .box-top {
                 background-color: $gray; padding:10px 20px;
                 color: #bcbdbf; 
+                .line1 { font-size: 29px; font-size: 36px; }
                 .line2 { color: #eff0f0; }
+                .line3 { font-size: 25px; }
             }
             .box-lower {
                 padding: 5px 20px; font-size: 31px; color: #fff;
                 cursor: pointer;
+                font-size: 25px;
                 &:before {
                     content: "\f055"; font-size:21px;
                     color: #f2f4f4; display: inline-block; margin-right:5px;
@@ -98,12 +117,13 @@ TWCI custom styling
             }
             input[type=text] {
                 border: 0; padding: 7px 10px;
-                color: #808285; 
+                color: #808285; font-size:18px; 
                 
             }
             input[type=submit] {
                 background-color: $gray;  color: #fff;
                 padding: 5px 20px; border: 0; width: 100%;
+                font-size:18px; 
             }  
             legend { color: $textgray; }
         }
@@ -156,6 +176,61 @@ TWCI custom styling
                 color: #808285; 
             }
         }
+        @include breakpoint(maxsmall) {
+            position: absolute; top: 100px; right: 0;
+            &.active {
+                left: 0;
+                .block__title { 
+                    transform: none; -webkit-transform: none;
+                    position: relative; width: 100%;
+                    display: block; right: 0%;
+                }
+            }
+        }
+        @include breakpoint(minsmall) {
+            .pre-intructions {
+                .box-top {
+                    .line1 { font-size: 36px; }
+                    .line2 { font-size: 44px; }
+                    .line3 { font-size: 31px; }
+                }
+                .box-lower {
+                    font-size: 31px;
+                }
+            }
+            .form-wrapper {
+                input[type=text], input[type=submit] {
+                    font-size:22px; 
+                }
+            }
+        }
+        @include breakpoint(smallmed) {
+            position: absolute; right: -20px; z-index: 2;
+            width: 400px;
+            .block__title {
+                display: block;
+            }
+        }
+        @include breakpoint(minlarge) {
+            .not-front & {
+                position: relative;
+                .block__title { display: none; }
+                width: 100%;
+                form {
+                    display: block;
+                    .form-wrapper {
+                        display: none;
+                    }
+                }
+                &.active {
+                    form {
+                        .form-wrapper {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
     }
     #content {
         color: $textgray;
@@ -174,6 +249,9 @@ TWCI custom styling
     }
     .region-sidebar-second {
         position: relative; 
+        @include breakpoint(maxsmall) {
+            position: static;
+        }
     }
     // team section
     /*
@@ -188,7 +266,7 @@ TWCI custom styling
     }
     */
     // news section
-    .view-news-list, .view-team-list {
+    .view-news-list {
         .views-row {
             padding:20px 0;
             border-bottom: 1px $lightgreen solid;
@@ -196,18 +274,29 @@ TWCI custom styling
                 color: $tealgreen;
             }
             .views-field {
-                /* margin-left: 25%; */
                 margin-bottom:10px;
             }
             .views-field-field-image {
-                float: left; margin-left: 0%; width: 25%;
                 padding-right:20px; box-sizing: border-box;
-                display: none;
+            }
+            @include breakpoint(minsmall) {
+                .views-field { margin-left: 25%; }
+                .views-field-field-image {
+                    float: left; margin-left: 0%; width: 25%;
+                }
             }
         }
     }
     .view-team-list {
-        .views-row { border: none; }
+        .views-row { 
+            padding:20px;
+            .views-field { 
+                margin-bottom: 10px;
+            }
+            .views-field-field-image {
+                display: none;
+            }
+        }
     }
 }
 
