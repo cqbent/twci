@@ -101,12 +101,45 @@ $zen-auto-include-item-base: false;
     }
 }
 #main { 
+    
     h1 {
         font-size: 50px; line-height: 50px;
     }
     padding-left: 20px; padding-right: 20px;
     #block-entityform-block-schedule-consultation {
-        .block__title { display: none; }
+        form {
+            display: none;
+            .form-wrapper {
+                display: block;
+            }
+        }
+        &.active {
+            .block__title { display: none; }
+            .block__title {
+                transform-origin: 100% 0;
+                -webkit-transform-origin: 100% 0;
+                top: 0; right: 100%; margin-right:60px;
+                &:after { content: "\f056"; }
+            }
+            form {
+                display: block;
+            }
+        }
+        .pre-intructions {
+            .box-top {
+                .line1 { font-size: 29px; }
+                .line2 { font-size: 36px; }
+                .line3 { font-size: 25px; }
+            }
+            .box-lower {
+                font-size: 25px;
+            }
+        }
+        .form-wrapper {
+            input[type=text], input[type=submit] {
+                font-size:18px; 
+            }
+        }
     }
     .front & {
         #block-views-homepage-images-block {
@@ -127,13 +160,7 @@ $zen-auto-include-item-base: false;
                     border-bottom: 1px #e1e2e3 solid;
                     margin: 0 0 0 0px; box-sizing: border-box;
                 }
-                .left {
-                    float: left; width:35%; padding-right:10px;
-                    box-sizing: border-box; 
-                }
-                .right {
-                    float: right; width:65%;
-                }
+                
             }
             .savings {
                 color: #fecc40;
@@ -165,6 +192,28 @@ $zen-auto-include-item-base: false;
 #footer {
     .footer-block {
         padding-left:30px; padding-right: 30px;
+    }
+}
+
+@media all and (max-width: 779px) {
+    #main {
+        #block-entityform-block-schedule-consultation {
+            position: fixed; top: 100px; right: 0;
+            &.active {
+                left: 0;
+                .block__title { 
+                    transform: none; -webkit-transform: none;
+                    position: relative; width: 100%;
+                    display: block; right: 0%;
+                }
+            }
+        }
+        .not-front & {
+            #block-views-page-image-block {
+                display: none;
+            }
+        }
+        
     }
 }
 
@@ -203,7 +252,7 @@ $zen-auto-include-item-base: false;
                             margin-right:10px;
                             &:after { 
                                 content: "\2022"; color: $tealgreen; 
-                                display: inline-block; margin-left: 15px; font-size: .875rem;
+                                display: inline-block; margin-left: 10px; font-size: .875rem;
                             }
                         }
                         .menu {
@@ -211,10 +260,13 @@ $zen-auto-include-item-base: false;
                             li { 
                                 list-style: none; height:40px; padding:0;
                                 background: none; border: none; float: left;
-                                
+                                a:after { color: #fff; }
+                                &.last {
+                                    a:after { display: none; }
+                                }
                             }
                         }
-                        &.active-trail {
+                        &.is-expanded:hover, &.active-trail {
                             &:after {
                                 content: "\f0d8"; font-family: 'FontAwesome'; font-size:40px;
                                 color: $tealgreen; display: block; 
@@ -227,31 +279,49 @@ $zen-auto-include-item-base: false;
                 }
             }  
         }
+        &.active .region-header .block-menu-block {
+            .menu-block-wrapper > .menu > li {
+                &.active-trail:not(.hover) {
+                    .menu { display: none; }
+                }
+            }
+        }
+        .front & {
+            border: none;
+            &.active {
+                border-bottom: 40px $tealgreen solid;
+            }
+        }
     }
     #main {
         h1 {
             font-size: 90px; line-height: 70px; padding-bottom:20px
         }
+        #content {
+            font-size: 1rem; line-height: 2rem;  
+            h2 { font-size: 2.25rem; line-height:32px; }
+        }
         #block-entityform-block-schedule-consultation {
             .block__title { 
             }
-            form {
-                display: none;
-                .form-wrapper {
-                    display: block;
+            .pre-intructions {
+                .box-top {
+                    .line1 { font-size: 36px; }
+                    .line2 { font-size: 44px; }
+                    .line3 { font-size: 31px; }
+                }
+                .box-lower {
+                    font-size: 31px;
                 }
             }
-            &.active {
-                .block__title {
-                    transform-origin: 100% 0;
-                    -webkit-transform-origin: 100% 0;
-                    top: 0; right: 100%; margin-right:60px;
-                    &:after { content: "\f056"; }
-                }
-                form {
-                    display: block;
+            .form-wrapper {
+                input[type=text], input[type=submit] {
+                    font-size:22px; 
                 }
             }
+        }
+        .columns-3 {
+            @include responsive-grid(3);
         }
     }
     #footer {
@@ -279,6 +349,13 @@ $zen-auto-include-item-base: false;
                         border-bottom: none;
                         border-right: 1px #e1e2e3 solid;
                         vertical-align: top; clear: none;
+                    }
+                    .left {
+                        float: left; width:35%; padding-right:10px;
+                        box-sizing: border-box; 
+                    }
+                    .right {
+                        float: right; width:65%;
                     }
                 }
             }
@@ -329,6 +406,7 @@ $zen-auto-include-item-base: false;
                 display: block;
             }
       }
+      
   }
   // front page
   .front {
@@ -447,7 +525,7 @@ $zen-auto-include-item-base: false;
                             .menu {
                                 top: 67px;
                             }
-                            &.active-trail {
+                            &.is-expanded:hover, &.active-trail {
                                 &:after {
                                     margin-top:15px;
                                 }
@@ -471,6 +549,8 @@ $zen-auto-include-item-base: false;
         }
         .not-front & {
             #block-entityform-block-schedule-consultation {
+                position: relative;
+                .block__title { display: none; }
                 width: 100%;
                 form {
                     display: block;

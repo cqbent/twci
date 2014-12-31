@@ -41,6 +41,24 @@ Drupal.behaviors.my_custom_behavior = {
             $('.block-menu-block').addClass('menu-active');
         }
     });
+    
+    /* desktop menu - add action when hovering over top menu items */
+    var bmb_menu_trail = '.block-menu-block .menu-block-wrapper > .menu > li';
+    // add active class to header on hover
+    $('#header').hover(
+        function() { 
+            $(this).addClass('active'); 
+        },
+        function() { 
+            $(this).removeClass('active'); 
+            $(bmb_menu_trail).removeClass('hover');
+        }
+    );
+    // add hover class when hovering over top menu items
+    $(bmb_menu_trail).hover(function() {
+        $(bmb_menu_trail).removeClass('hover');
+        $(this).addClass('hover');
+    });
 
   }
 };

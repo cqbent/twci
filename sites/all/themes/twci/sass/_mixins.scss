@@ -50,3 +50,20 @@
         @media (min-width: 1300px) { @content; }
     }
 }
+
+@mixin clearafter {
+    &:after {
+        content: ""; display: block;
+        clear: both;
+    }
+}
+
+@mixin responsive-grid($columns) {
+    $i: 1;
+    $zen-column-count: $columns; 
+    @include clearafter();
+    @while $i <= $columns {
+        .column-#{$i} { @include zen-grid-item(1, $i); }
+        $i: $i+1;
+    }
+}

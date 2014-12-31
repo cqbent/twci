@@ -26,7 +26,7 @@ TWCI custom styling
     #logo {
         height: 80px;
         float: left;
-        img { height: 100%; }
+        img { max-height: 100%; }
     }
     #block-block-2 {
         float: right; margin: 40px 0 0 0;
@@ -67,9 +67,7 @@ TWCI custom styling
             .box-top {
                 background-color: $gray; padding:10px 20px;
                 color: #bcbdbf; 
-                .line1 { font-size: 36px; }
-                .line2 { font-size: 44px; color: #eff0f0; }
-                .line3 { font-size: 31px; }
+                .line2 { color: #eff0f0; }
             }
             .box-lower {
                 padding: 5px 20px; font-size: 31px; color: #fff;
@@ -100,14 +98,14 @@ TWCI custom styling
             }
             input[type=text] {
                 border: 0; padding: 7px 10px;
-                font-size:22px; color: #808285; 
+                color: #808285; 
                 
             }
             input[type=submit] {
-                background-color: $gray; font-size: 22px; color: #fff;
+                background-color: $gray;  color: #fff;
                 padding: 5px 20px; border: 0; width: 100%;
             }  
-            legend { color: #fff; }
+            legend { color: $textgray; }
         }
         .field-type-datetime {
             .form-wrapper {
@@ -160,14 +158,14 @@ TWCI custom styling
         }
     }
     #content {
-        font-size: 1.1875rem; line-height: 2rem; color: $textgray;
+        color: $textgray;
         p { margin: 0 0 24px 0; }
         h1 {
             color: $tealgreen; font-family: $brandongrotesque;
             font-weight: 300; margin-bottom: 20px;
         }
         h2 { 
-            color: $lightgreen; font-size: 2.25rem; line-height:32px; font-family: $brandongrotesque; 
+            color: $lightgreen; font-family: $brandongrotesque; 
             font-weight: normal; margin: 0 0 16px 0;
         }
         a { 
@@ -198,11 +196,13 @@ TWCI custom styling
                 color: $tealgreen;
             }
             .views-field {
-                margin-left: 25%; margin-bottom:10px;
+                /* margin-left: 25%; */
+                margin-bottom:10px;
             }
             .views-field-field-image {
                 float: left; margin-left: 0%; width: 25%;
                 padding-right:20px; box-sizing: border-box;
+                display: none;
             }
         }
     }
@@ -228,6 +228,7 @@ TWCI custom styling
                 &:first-child { padding-left:0; }
                 &:last-child { padding-right:0; }
             }
+            .bullet { color: $tealgreen; }
         }
     }
 }
@@ -236,7 +237,6 @@ TWCI custom styling
 .front {
     #page {
         #header {
-            border: 0;
             min-height:97px;
             position: fixed; z-index: 3;
         }
