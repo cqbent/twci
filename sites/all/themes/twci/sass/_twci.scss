@@ -262,17 +262,17 @@ TWCI custom styling
                 background-size: cover;
             }
             #block-entityform-block-schedule-consultation {
-                position: absolute; right: 0px; z-index: 2;
-                top: 165px; 
-                width: 400px;
-                .block__title {
-                    display: block;
+                z-index: 2;
+                @include breakpoint(minsmall) {
+                    position: absolute; right: 0px; 
+                    top: 165px; 
+                    width: 400px;
+                    .block__title {
+                        display: block;
+                    }
                 }
                 @include breakpoint(maxsmall) {
-                    position: relative; width: 100%; top: 0; margin-top:20px;
-                    .block__title {
-                        display: none;
-                    }
+                    
                 }
             }
             #block-views-page-image-block {

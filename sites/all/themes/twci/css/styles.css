@@ -2842,27 +2842,19 @@ TWCI custom styling
 }
 /* line 264, ../sass/_twci.scss */
 .front #page #main #block-entityform-block-schedule-consultation {
-  position: absolute;
-  right: 0px;
   z-index: 2;
-  top: 165px;
-  width: 400px;
 }
-/* line 268, ../sass/_twci.scss */
-.front #page #main #block-entityform-block-schedule-consultation .block__title {
-  display: block;
-}
-@media (max-width: 780px) {
+@media (min-width: 780px) {
   /* line 264, ../sass/_twci.scss */
   .front #page #main #block-entityform-block-schedule-consultation {
-    position: relative;
-    width: 100%;
-    top: 0;
-    margin-top: 20px;
+    position: absolute;
+    right: 0px;
+    top: 165px;
+    width: 400px;
   }
-  /* line 273, ../sass/_twci.scss */
+  /* line 270, ../sass/_twci.scss */
   .front #page #main #block-entityform-block-schedule-consultation .block__title {
-    display: none;
+    display: block;
   }
 }
 @media (max-width: 780px) {
