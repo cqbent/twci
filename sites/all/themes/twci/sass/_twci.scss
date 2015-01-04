@@ -270,6 +270,7 @@ TWCI custom styling
         .views-row {
             padding:20px 0;
             border-bottom: 1px $lightgreen solid;
+            @include clearafter();
             .views-field-created {
                 color: $tealgreen;
             }
@@ -279,11 +280,34 @@ TWCI custom styling
             .views-field-field-image {
                 padding-right:20px; box-sizing: border-box;
             }
+            
             @include breakpoint(minsmall) {
                 .views-field { margin-left: 25%; }
                 .views-field-field-image {
                     float: left; margin-left: 0%; width: 25%;
                 }
+            }
+        }
+    }
+    .node-news {
+        .field {
+            margin-bottom: 10px;
+        }
+        .field-name-post-date {
+            color: $tealgreen; float: left;
+        }
+        .field-name-field-tags {
+            a:before { content: " | "; display: inline-block; padding: 0 5px; }
+        }
+        &.node-teaser {
+            border-bottom: 1px $lightgreen solid;
+            @include clearafter();
+            @include breakpoint(minsmall) {
+                .group-left { width: 25%; padding-right:20px; box-sizing: border-box; }
+                .group-right { width: 75%; }
+            }
+            @include breakpoint(maxmall) {
+                .group-left, .group-right { float: none; width: 100%; }
             }
         }
     }
@@ -301,7 +325,7 @@ TWCI custom styling
 }
 
 #footer {
-    position: fixed; bottom:0px; width:100%; z-index: 3;
+    position: relative; bottom:0px; width:100%; z-index: 3;
     background-color: $darkgray;
     color: #c7c8ca; font-size:12px; 
     padding: 5px 0;

@@ -159,7 +159,13 @@ $zen-auto-include-item-base: false;
 }
 
 @media all and (max-width: 779px) {
+    #header {
+        position: fixed; z-index: 3;
+    }
     #main {
+        #content {
+            margin-top:97px;
+        }
         .not-front & {
             #block-views-page-image-block {
                 display: none;
@@ -239,10 +245,7 @@ $zen-auto-include-item-base: false;
             }
         }
         .front & {
-            border: none;
-            &.active {
-                border-bottom: 40px $tealgreen solid;
-            }
+            
         }
     }
     #main {

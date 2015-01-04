@@ -87,8 +87,8 @@
     <?php print render($page['header']); ?>
     
         <div class="social-icons">
-            <a href="http://www.facebook.com/twci"><i class="fa fa-facebook-square"></i></a>
-            <a href="http://www.twitter.com/twci"><i class="fa fa-twitter-square"></i></a>
+            <a href="http://www.facebook.com/twciwellness"><i class="fa fa-facebook-square"></i></a>
+            <a href="http://www.twitter.com/twciwellness"><i class="fa fa-twitter-square"></i></a>
         </div>
       
     </div>

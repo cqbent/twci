@@ -162,5 +162,14 @@ function display_bk_image($node) {
         //dsm($node->field_background_image);
         return $bkimg;
     }
-    
 }
+
+// alter submitted info display
+/*
+function twci_preprocess_node(&$variables, $hook) {
+    $customdate = format_date($variables['node']->created, 'custom', 'd F, Y');
+    if ($variables['display_submitted']) {
+        $variables['submitted'] = t($customdate);
+    }
+} 
+ */
