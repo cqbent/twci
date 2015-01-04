@@ -17,14 +17,22 @@
 Drupal.behaviors.my_custom_behavior = {
     attach: function(context, settings) {
     
-    // consultation form  
-    $('#block-entityform-block-schedule-consultation .box-lower, #block-entityform-block-schedule-consultation .block__title').click(function() {
+    // consultation form
+    var consultform = '#block-entityform-block-schedule-consultation';
+    $(consultform+' .box-lower, '+consultform+' .block__title').click(function() {
         // if form elements hidden then hide; otherwise show; change box-lower status
-        if ($('#block-entityform-block-schedule-consultation').hasClass('active')) {
-            $('#block-entityform-block-schedule-consultation').removeClass('active');
+        if ($(consultform).hasClass('active')) {
+            $(consultform).removeClass('active');
         }
         else {
-            $('#block-entityform-block-schedule-consultation').addClass('active');
+            $(consultform).addClass('active');
+            // if in mobile view then get y-coordinate of form and scroll down to it
+            var cpos = $(consultform).offset();
+            //console.log(cpos.top);
+            $('body').animate({
+                scrollTop: cpos.top-100
+            }, 1000);
+            
         }        
     });
     
@@ -67,7 +75,7 @@ Drupal.behaviors.my_custom_behavior = {
     var col1_height = $('.field-name-body .col1').height() + 20;
     var margin_y = w_height - f_height - col1_height;
     $('.front #main .field-name-body').css('margin-top',margin_y);
-    console.log('w_height: '+w_height+', f_height: '+f_height+', col1_height: '+col1_height);
+    //console.log('w_height: '+w_height+', f_height: '+f_height+', col1_height: '+col1_height);
 
   }
 };
