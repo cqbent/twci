@@ -840,7 +840,7 @@ table {
 @media all and (min-width: 780px) {
   /* line 180, ../sass/layouts/_responsive.scss */
   #page {
-    background-size: 60%;
+    /* background-size:60%; */
   }
 
   /* line 183, ../sass/layouts/_responsive.scss */
