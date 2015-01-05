@@ -177,6 +177,9 @@ $zen-auto-include-item-base: false;
 
 /* Navigation bar */
 @media all and (min-width: 780px) {
+    #page {
+        background-size:60%;
+    }
   #main {
     /* Move all the children of #main down to make room. */
     padding-top: 30px;;

@@ -2,7 +2,8 @@
 TWCI custom styling
 */
 #page {
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
+    background-image: url(../images/page_bk.svg);
 }
 #header {
     // dark gray, 100%,  set/max height, fonts, font size, color, 
@@ -303,7 +304,7 @@ TWCI custom styling
 }
 
 #footer {
-    position: relative; bottom:0px; width:100%; z-index: 3;
+    position: relative; width:100%; z-index: 3;
     background-color: $darkgray;
     color: #c7c8ca; font-size:12px; 
     padding: 5px 0;
@@ -321,6 +322,9 @@ TWCI custom styling
             }
             .bullet { color: $tealgreen; }
         }
+    }
+    @include breakpoint(minsmall) {
+        position: fixed;  bottom:0px; 
     }
 }
 

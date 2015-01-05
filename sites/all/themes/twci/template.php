@@ -164,6 +164,17 @@ function display_bk_image($node) {
     }
 }
 
+/*
+function display_bk_file($node) {
+    // if node has background image then get background image and display it 
+    if (isset($node->field_background_file['und'][0])) {
+        //$bkimg = field_view_field('node', $node, 'field_background_image', array('label' => 'hidden'));
+        $bkfile = file_create_url($node->field_background_file['und'][0]['uri']);
+        //dsm($node->field_background_image);
+        return $bkfile;
+    }
+}
+ */
 // alter submitted info display
 /*
 function twci_preprocess_node(&$variables, $hook) {
