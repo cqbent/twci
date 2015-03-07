@@ -58,12 +58,13 @@ TWCI custom styling
         }
         form { 
             padding-bottom: 10px;
-            display: none;
+            display: none; 
             .form-wrapper {
                 display: block;
             }
         }
         .block__title {
+            display: none;
             position: absolute;  right: 0;
             transform: rotate(-90deg); transform-origin: 100% 100%;
             -webkit-transform: rotate(-90deg); -webkit-transform-origin: 100% 100%;
@@ -122,7 +123,7 @@ TWCI custom styling
                 
             }
             input[type=submit] {
-                background-color: $gray;  color: #fff;
+                background-color: $tealgreen;  color: #fff;
                 padding: 5px 20px; border: 0; width: 100%;
                 font-size:18px; 
             }  
@@ -141,7 +142,7 @@ TWCI custom styling
         }
         // select field styling
         .form-select-wrapper {
-            position: relative;
+            position: relative; 
             vertical-align: middle;
             &:before, &:after {
                 content: "";
@@ -205,12 +206,14 @@ TWCI custom styling
                     font-size:22px; 
                 }
             }
+            form { display: block;  }
+            .block-title { display: none; }
         }
         @include breakpoint(smallmed) {
             position: absolute; right: -20px; z-index: 2;
             width: 400px;
             .block__title {
-                display: block;
+                /* display: block; */
             }
         }
         @include breakpoint(minlarge) {
@@ -248,6 +251,11 @@ TWCI custom styling
         a { 
             color: $tealgreen; text-decoration: none;
         }
+        @include breakpoint(maxsmall) {
+            .p-first {
+                margin-right: 40px;
+            }
+        }
     }
     .region-sidebar-second {
         position: relative; 
@@ -268,7 +276,8 @@ TWCI custom styling
     }
     */
     
-    .node-news {
+    .node-news, .node-type-news & {
+        h1.title { font-size: 45px; line-height: 45px; }
         .field {
             margin-bottom: 10px;
         }
@@ -276,17 +285,30 @@ TWCI custom styling
             color: $tealgreen; float: left;
         }
         .field-name-field-tags {
+            float: left; margin-right:10px;
             a:before { content: " | "; display: inline-block; padding: 0 5px; }
         }
+        .field-name-author { color: $tealgreen; }
+        .field-name-body {
+            clear: both; margin-top:20px;
+            .title {
+                
+            }
+            .yellow {
+                
+            }
+        }
         &.node-teaser {
-            border-bottom: 1px $lightgreen solid;
+            border-bottom: 1px $lightgreen solid; margin-bottom:20px;
             @include clearafter();
             @include breakpoint(minsmall) {
-                .group-left { width: 25%; padding-right:20px; box-sizing: border-box; }
-                .group-right { width: 75%; }
+                .group-left { width: 25%; margin-right:-25%; padding-right:20px; box-sizing: border-box; }
+                .group-right { width: 75%; margin-left:25%;  }
             }
-            @include breakpoint(maxmall) {
-                .group-left, .group-right { float: none; width: 100%; }
+            @include breakpoint(maxsmall) {
+                h2 { line-height: normal; }
+                .group-left, .group-right { float: none; width: 100%; margin: 0; }
+                .group-left { display: none; }
             }
         }
     }
@@ -363,8 +385,9 @@ TWCI custom styling
                     top: 165px; 
                     width: 400px;
                     .block__title {
-                        display: block;
+                        display: none;
                     }
+                    form { display: block; }
                 }
                 @include breakpoint(maxsmall) {
                     
@@ -377,6 +400,18 @@ TWCI custom styling
                 
             }
         }
+    }
+    .home-intro {
+        bottom: 170px;
+        position: fixed;
+        width: 530px;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.7);
+        color: #FFF;
+        left: 30px;
+        font-size: 22px;
+        font-family: "brandon-grotesque", Verdana, Arial;
+        line-height: 32px;
     }
     
     

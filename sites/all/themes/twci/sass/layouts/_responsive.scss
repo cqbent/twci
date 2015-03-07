@@ -91,6 +91,7 @@ $zen-auto-include-item-base: false;
                        > a { color: $tealgreen; }
                         .menu { 
                             display: block; 
+                            
                         }
                     }
                     &.expanded:hover, &.expanded.active { padding-bottom:0; }
@@ -117,16 +118,34 @@ $zen-auto-include-item-base: false;
             &:after { content: ""; display: block; clear: both; }
             ul {
                 margin: 0 auto;
-                list-style: none; padding: 0;
+                padding: 0;
                 width: 100%; max-width:1300px;
                 li {
-                    padding: 10px 30px;
+                    padding: 10px 0;
                     border-bottom: 1px #e1e2e3 solid;
                     margin: 0 0 0 0px; box-sizing: border-box;
+                    ul {
+                        font-size:17px; line-height: 20px;
+                        li {
+                            padding: 0; border: none; padding: 0;
+                            &:before { content: "\2022"; padding-right:5px; }
+                            &.linksmall {
+                                list-style:none; font-size: 14px;
+                                &:before { content: ""; }
+                                a { color: #fff !important; }
+                            }
+                        }
+                    }
                 }
             }
-            .savings {
+            .yellow {
                 color: #fecc40;
+            }
+            .teal {
+                color: #3EC1C5;
+            }
+            .lightgreen {
+                color: #ADC64C;
             }
             .comparison {
                 font-size: 17px; line-height: 20px;
@@ -142,8 +161,8 @@ $zen-auto-include-item-base: false;
             }
             .col3 {
                 .savings { color: #3ec1c5; }
-                .left { width:25%; }
-                .right { width: 75%; }
+                .left {  }
+                .right {  }
             }
             .col4 {
                 .savings { color: #adc64c;  }
@@ -227,15 +246,23 @@ $zen-auto-include-item-base: false;
                                 }
                             }
                         }
+                        
                         &.is-expanded:hover, &.active-trail {
                             &:after {
                                 content: "\f0d8"; font-family: 'FontAwesome'; font-size:40px;
                                 color: $tealgreen; display: block; 
                                 margin-top:-5px; padding-right:15px;
                                 text-align: center;
+                                .front & {
+                                    display: none;
+                                }
                             }
                         }
-                        
+                        .front & {
+                            &:hover {
+                                .menu { display: none; }
+                            }
+                        }
                     }
                 }
             }  
@@ -248,7 +275,7 @@ $zen-auto-include-item-base: false;
             }
         }
         .front & {
-            
+            border-bottom: 0;
         }
     }
     #main {
@@ -281,17 +308,29 @@ $zen-auto-include-item-base: false;
             .field-name-body {
                 position:fixed; 
                 left: 0; bottom: 34px; margin-bottom: 0;
+                
                 ul {
                     display: table; 
                     li {
                         display: table-cell; 
                         border-bottom: none;
                         border-right: 1px #e1e2e3 solid;
-                        vertical-align: top; clear: none;
+                        vertical-align: top; clear: none; position:relative;
+                        ul {
+                            display: block;
+                            li {
+                               display: block; border: none; 
+                               
+                            }
+                        }
                     }
                     .left {
                         float: left; width:35%; padding-right:10px;
                         box-sizing: border-box; 
+                        img {
+                            max-width: 100px;
+                            position: absolute; top: 0; left: 0;
+                        }
                     }
                     .right {
                         float: right; width:65%;
@@ -493,9 +532,10 @@ $zen-auto-include-item-base: false;
                       li {
                         padding: 10px 10px;
                         &.col1 { width: 15%; padding-left:0; }
-                        &.col2 { width: 30%; }
-                        &.col3 { width: 25%; }
-                        &.col4 { width: 30%; border: none; }
+                        &.col2 { width: 28%; }
+                        &.col3 { width: 28%; }
+                        &.col4 { width: 29%; border: none; }
+                        li { padding: 0; }
                       }
                   }
               }
